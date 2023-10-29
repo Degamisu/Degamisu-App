@@ -11,26 +11,45 @@ Public Class Form3
     Private WithEvents saveToolStripMenuItem As New ToolStripMenuItem()
     Private WithEvents loadToolStripMenuItem As New ToolStripMenuItem()
     Private WithEvents loadCustomButton As New Button()
+    Private writer As StreamWriter ' Declare the writer variable
+    Dim logFilePath As String = "log.txt"
+    Dim currentTime As DateTime = DateTime.Now
+    Dim logMessage As String = currentTime.ToString("yyyy-MM-dd HH:mm:ss")
+    Console.WriteLine(logMessage)
+    
+    Private Sub Log(message As String)
+        ' Open the log file in append mode
+        Using writer As New StreamWriter("log.txt", True)
+            ' Write the log message to the file
 
-    Private logFilePath As String = "log.txt"
+        End Using
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Console.WriteLine(logMessage)
+    End Sub
 
     Public Sub New()
         ' Set up the form
         Me.Text = "Text Editor"
         Me.Size = New Size(800, 600)
+        writer.WriteLine($"{DateTime.Now} Application started")
 
         ' Add the RichTextBox control to the form
         richTextBox.Multiline = True
         richTextBox.Dock = DockStyle.Fill
         Me.Controls.Add(richTextBox)
+        writer.WriteLine($"{DateTime.Now} richTextBox has been initialized successfully")
 
         ' Add the TreeView control to the form
         Me.Controls.Add(treeView)
+        writer.WriteLine(DateTime.Now, "treeView has been initialized successfully")
 
         ' Add the File menu options
         Dim fileToolStripMenuItem As New ToolStripMenuItem("File")
         fileToolStripMenuItem.DropDownItems.Add(saveToolStripMenuItem)
         fileToolStripMenuItem.DropDownItems.Add(loadToolStripMenuItem)
+        writer.WriteLine($"{DateTime.Now} fileToolStripMenuItem has been initialized successfully")
 
         Dim menuStrip As New MenuStrip()
         menuStrip.Items.Add(fileToolStripMenuItem)
@@ -40,7 +59,7 @@ Public Class Form3
         ' Set up event handlers
         AddHandler saveToolStripMenuItem.Click, AddressOf SaveToolStripMenuItem_Click
         AddHandler loadToolStripMenuItem.Click, AddressOf LoadToolStripMenuItem_Click
-
+        writer.WriteLine($"{DateTime.Now} menuStrip has been initialized successfully")
         ' Set up file tree
         treeView.Dock = DockStyle.Left
         treeView.Width = 200
@@ -76,7 +95,8 @@ Public Class Form3
             If saveFileDialog.ShowDialog() <> DialogResult.OK Then
                 Return ' Cancelling the operation
             End If
-            File.WriteAllText(saveFileDialog.FileName, richTextBox.Text)
+            Dim encryptedText As String = EncryptText(richTextBox.Text)
+            File.WriteAllText(saveFileDialog.FileName, encryptedText)
             LogEvent($"File saved: {saveFileDialog.FileName}")
         End Using
     End Sub
@@ -87,27 +107,27 @@ Public Class Form3
             If openFileDialog.ShowDialog() <> DialogResult.OK Then
                 Return ' Cancelling the operation
             End If
-            richTextBox.Text = File.ReadAllText(openFileDialog.FileName)
+            Dim encryptedText As String = File.ReadAllText(openFileDialog.FileName)
+            Dim decryptedText As String = DecryptText(encryptedText)
+            richTextBox.Text = decryptedText
             LogEvent($"File loaded: {openFileDialog.FileName}")
         End Using
     End Sub
 
     Private Function EncryptCharacter(c As Char) As Char
-        If Char.IsLetter(c) Then
-            Dim offset As Integer = If(Char.IsUpper(c), 64, 96)
-            Dim encryptedValue As Integer = Asc(c) - offset
-            Return Chr(encryptedValue)
+        If Char.IsLetterOrDigit(c) Then
+            Dim offset As Integer = If(Char.IsDigit(c), 48, If(Char.IsUpper(c), 65, 97))
+            Dim encryptedValue As Integer = (Asc(c) - offset + 26) Mod 26
+            Return Convert.ToChar(encryptedValue + offset)
         End If
         Return c
     End Function
 
     Private Function DecryptCharacter(c As Char) As Char
-        If Char.IsDigit(c) Then
-            Dim decryptedValue As Integer = Asc(c) + 48
-            Return Chr(decryptedValue)
-        ElseIf Char.IsLetter(c) Then
-            Dim decryptedValue As Integer = Asc(c) + 96
-            Return Chr(decryptedValue)
+        If Char.IsLetterOrDigit(c) Then
+            Dim offset As Integer = If(Char.IsDigit(c), 48, If(Char.IsUpper(c), 65, 97))
+            Dim decryptedValue As Integer = (Asc(c) - offset + 26) Mod 26
+            Return Convert.ToChar(decryptedValue + offset)
         End If
         Return c
     End Function
@@ -132,7 +152,13 @@ Public Class Form3
         Using openFileDialog As New OpenFileDialog()
             openFileDialog.Filter = "Degamisu N64 Script (*.dens)|*.dens"
             If openFileDialog.ShowDialog() = DialogResult.OK Then
-                ' Custom logic for loading .dens file
+                Dim encryptedText As String = File.ReadAllText(openFileDialog.FileName)
+                Dim decryptedText As String = DecryptText(encryptedText)
+
+                ' Use the decryptedText as needed, such as assigning it to a TextBox
+                richTextBox.Text = decryptedText
+
+                LogEvent($"File loaded: {openFileDialog.FileName}")
             End If
         End Using
     End Sub
