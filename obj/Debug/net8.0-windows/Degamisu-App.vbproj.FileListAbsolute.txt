@@ -1,0 +1,17 @@
+D:\Github\DEGAMISU\Degamisu-App\Degamisu-App\Degamisu-App\obj\Debug\net8.0-windows\Degamisu_App.Form1.resources
+D:\Github\DEGAMISU\Degamisu-App\Degamisu-App\Degamisu-App\obj\Debug\net8.0-windows\Degamisu-App.vbproj.GenerateResource.cache
+D:\Github\DEGAMISU\Degamisu-App\Degamisu-App\Degamisu-App\obj\Debug\net8.0-windows\Degamisu-App.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\DEGAMISU\Degamisu-App\Degamisu-App\Degamisu-App\obj\Debug\net8.0-windows\Degamisu-App.AssemblyInfoInputs.cache
+D:\Github\DEGAMISU\Degamisu-App\Degamisu-App\Degamisu-App\obj\Debug\net8.0-windows\Degamisu-App.AssemblyInfo.vb
+D:\Github\DEGAMISU\Degamisu-App\Degamisu-App\Degamisu-App\obj\Debug\net8.0-windows\Degamisu-App.vbproj.CoreCompileInputs.cache
+D:\Github\DEGAMISU\Degamisu-App\Degamisu-App\Degamisu-App\obj\Debug\net8.0-windows\Degamisu-App.sourcelink.json
+D:\Github\DEGAMISU\Degamisu-App\Degamisu-App\Degamisu-App\bin\Debug\net8.0-windows\Degamisu-App.exe
+D:\Github\DEGAMISU\Degamisu-App\Degamisu-App\Degamisu-App\bin\Debug\net8.0-windows\Degamisu-App.deps.json
+D:\Github\DEGAMISU\Degamisu-App\Degamisu-App\Degamisu-App\bin\Debug\net8.0-windows\Degamisu-App.runtimeconfig.json
+D:\Github\DEGAMISU\Degamisu-App\Degamisu-App\Degamisu-App\bin\Debug\net8.0-windows\Degamisu-App.dll
+D:\Github\DEGAMISU\Degamisu-App\Degamisu-App\Degamisu-App\bin\Debug\net8.0-windows\Degamisu-App.pdb
+D:\Github\DEGAMISU\Degamisu-App\Degamisu-App\Degamisu-App\obj\Debug\net8.0-windows\Degamisu-App.dll
+D:\Github\DEGAMISU\Degamisu-App\Degamisu-App\Degamisu-App\obj\Debug\net8.0-windows\refint\Degamisu-App.dll
+D:\Github\DEGAMISU\Degamisu-App\Degamisu-App\Degamisu-App\obj\Debug\net8.0-windows\Degamisu-App.pdb
+D:\Github\DEGAMISU\Degamisu-App\Degamisu-App\Degamisu-App\obj\Debug\net8.0-windows\Degamisu-App.genruntimeconfig.cache
+D:\Github\DEGAMISU\Degamisu-App\Degamisu-App\Degamisu-App\obj\Debug\net8.0-windows\ref\Degamisu-App.dll
