@@ -7,5 +7,5 @@
   <EnableVisualStyles>true</EnableVisualStyles>
   <AuthenticationMode>0</AuthenticationMode>
   <SaveMySettingsOnExit>true</SaveMySettingsOnExit>
-  <SplashScreen>Form1</SplashScreen>
+  <SplashScreen>Form2</SplashScreen>
 </MyApplicationData>
