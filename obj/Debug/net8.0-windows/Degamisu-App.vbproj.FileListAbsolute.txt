@@ -1,3 +1,4 @@
+D:\Github\DEGAMISU\Degamisu-App\Degamisu-App\Degamisu-App\obj\Debug\net8.0-windows\Degamisu_App.Form3.resources
 D:\Github\DEGAMISU\Degamisu-App\Degamisu-App\Degamisu-App\obj\Debug\net8.0-windows\Degamisu_App.Form1.resources
 D:\Github\DEGAMISU\Degamisu-App\Degamisu-App\Degamisu-App\obj\Debug\net8.0-windows\Degamisu-App.vbproj.GenerateResource.cache
 D:\Github\DEGAMISU\Degamisu-App\Degamisu-App\Degamisu-App\obj\Debug\net8.0-windows\Degamisu-App.GeneratedMSBuildEditorConfig.editorconfig
@@ -15,4 +16,3 @@ D:\Github\DEGAMISU\Degamisu-App\Degamisu-App\Degamisu-App\obj\Debug\net8.0-windo
 D:\Github\DEGAMISU\Degamisu-App\Degamisu-App\Degamisu-App\obj\Debug\net8.0-windows\Degamisu-App.pdb
 D:\Github\DEGAMISU\Degamisu-App\Degamisu-App\Degamisu-App\obj\Debug\net8.0-windows\Degamisu-App.genruntimeconfig.cache
 D:\Github\DEGAMISU\Degamisu-App\Degamisu-App\Degamisu-App\obj\Debug\net8.0-windows\ref\Degamisu-App.dll
-D:\Github\DEGAMISU\Degamisu-App\Degamisu-App\Degamisu-App\obj\Debug\net8.0-windows\Degamisu_App.Form2.resources

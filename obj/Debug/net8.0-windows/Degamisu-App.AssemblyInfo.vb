@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("Degamisu-App"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1dbf6fe2d59dee5b92737a2fd9d3c20ee2685154"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6e6e1295f237e3712bced0c9cca9c900be57f7b7"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("Degamisu-App"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("Degamisu-App"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _

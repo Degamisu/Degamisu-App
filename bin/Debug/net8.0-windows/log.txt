@@ -1,0 +1,17 @@
+Application started at 10/29/2023 9:39:11 AM
+Application started at 10/29/2023 9:41:31 AM
+Application started at 10/29/2023 9:47:49 AM
+Application started at 10/29/2023 9:51:44 AM
+Application started at 10/29/2023 10:47:57 AM
+Application started at 10/29/2023 10:49:49 AM
+Application started at 10/29/2023 11:05:47 AM
+Application started at 10/29/2023 11:09:29 AM
+File saved: D:\Github\DEGAMISU\Degamisu-App\Degamisu-App\Test\test.dens
+File loaded: D:\Github\DEGAMISU\Degamisu-App\Degamisu-App\Test\test.dens
+File loaded: D:\Github\DEGAMISU\Degamisu-App\Degamisu-App\Test\test.dens
+File loaded: D:\Github\DEGAMISU\Degamisu-App\Degamisu-App\Test\test.dens
+File loaded: D:\Github\DEGAMISU\Degamisu-App\Degamisu-App\Test\test.dens
+Application started at 10/29/2023 11:31:16 AM
+File saved: D:\Github\DEGAMISU\Degamisu-App\Degamisu-App\Test\encrypt.dens
+File loaded: D:\Github\DEGAMISU\Degamisu-App\Degamisu-App\Test\encrypt.dens
+File loaded: D:\Github\DEGAMISU\Degamisu-App\Degamisu-App\Test\encrypt.dens
